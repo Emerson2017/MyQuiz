@@ -1,0 +1,21 @@
+{
+  "name": "myquiz",
+  "version": "1.0.0",
+  "description": "quiz for questions and answers",
+  "main": "app.js",
+  "scripts": {
+    "dev": ".\node_modules\nodemon\bin\nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "emerson rocha",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

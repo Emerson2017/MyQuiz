@@ -1,0 +1,28 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="initial">
+        <header id="header">
+            <div id="title">My Quiz</div>
+        </header>
+        <div id="actions">
+            <div id="actionUser">
+                <form action="/auth/registerUser" method="POST">
+                    <input type="text" class="form-control" name="name" id="UserLogin" aria-describedby="emailHelp" placeholder="Usuário">
+                    <input type="email" class="form-control" name="email" id="EmailLogin" aria-describedby="emailHelp" placeholder="Email">
+                    <input type="password" class="form-control" name="password" id="SenhaLogin" aria-describedby="emailHelp" placeholder="Senha">
+                    <input type="password" class="form-control" name="confirmSenha" id="ConfirmSenha" aria-describedby="emailHelp" placeholder="Confirmar Senha">    
+                    <div id="groupButtons">
+                        <a href="/" class="btnLogin"><button type="button" class="btnLogin2 btn btn-outline-dark">Voltar</button></a>
+                        {{!-- <button type="button" class="btnLogin btn btn-outline-dark">Cadastrar</button> --}}
+                          <input type="submit" class="btnLogin btn btn-outline-dark" value="Cadastrar">  
+                    </div>
+                </form>        
+            </div>
+        </div>
+    </section>
+</body>
